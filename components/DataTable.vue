@@ -94,6 +94,14 @@ export default {
   ::v-deep thead.v-data-table-header tr th
     color: $rs__black_light !important
     text-transform: uppercase
+    border-right: 1px solid white
+    &:last-child
+      border-right: none
+
+  ::v-deep thead.v-data-table-header tr th .v-data-table-header__icon
+    position: relative
+    top: 1px
+    vertical-align: text-bottom
 
   ::v-deep tbody tr:hover
     background-color: lighten($rs__lilac, 30%) !important

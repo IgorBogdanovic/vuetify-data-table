@@ -39,8 +39,8 @@ export default {
         { text: 'Name', value: 'user', align: 'start', width: '24%', formatter: user => `${user.last_name}, ${user.first_name} ${user.title}` },
         { text: 'Email', value: 'email', width: '24%' },
         { text: 'Gender', value: 'gender', width: '10%' },
-        { text: 'Year', value: 'year', width: '10%' },
-        { text: 'Sales', value: 'sales', width: '15%', formatter: number => new Intl.NumberFormat().format(number) },
+        { text: 'Year', value: 'year', align: 'right', width: '10%' },
+        { text: 'Sales', value: 'sales', align: 'right', width: '15%', formatter: number => new Intl.NumberFormat(undefined, { minimumFractionDigits: 2 }).format(number) },
         { text: 'Country', value: 'country', width: '17%' }
       ]
     }
